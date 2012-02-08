@@ -24,37 +24,37 @@
     if (delta < 0) {
         return [self description];
     } else if (delta <= 30 * SECOND) {
-        return NSLocalizedString(@"just now", nil);
+        return NSLocalizedString(@"now", nil);
     } else if (delta < 1 * MINUTE) {
-        return [NSString stringWithFormat:@"%u secs", delta];
+        return [NSString stringWithFormat:@"%u s", delta];
     } else if (delta < 2 * MINUTE) {
         return @"1 min";
     } else if (delta <= 45 * MINUTE) {
-        return [NSString stringWithFormat:@"%u mins", delta / MINUTE];
+        return [NSString stringWithFormat:@"%u m", delta / MINUTE];
     } else if (delta <= 90 * MINUTE) {
         return @"1 hour";
     } else if (delta < 3 * HOUR) {
         return @"2 hours";
     } else if (delta < 23 * HOUR) {
-        return [NSString stringWithFormat:@"%u hours", delta / HOUR];
+        return [NSString stringWithFormat:@"%u hs", delta / HOUR];
     } else if (delta < 36 * HOUR) {
         return @"1 day";
     } else if (delta < 72 * HOUR) {
         return @"2 days";
     } else if (delta < 7 * DAY) {
-        return [NSString stringWithFormat:@"%u days", delta / DAY];
+        return [NSString stringWithFormat:@"%u d", delta / DAY];
     } else if (delta < 11 * DAY) {
         return @"1 week";
     } else if (delta < 14 * DAY) {
         return @"2 weeks";
     } else if (delta < 9 * WEEK) {
-        return [NSString stringWithFormat:@"%u weeks", delta / WEEK];
+        return [NSString stringWithFormat:@"%u ws", delta / WEEK];
     } else if (delta < 19 * MONTH) {
-        return [NSString stringWithFormat:@"%u months", delta / MONTH];        
+        return [NSString stringWithFormat:@"%u mth", delta / MONTH];        
     } else if (delta < 2 * YEAR) {
         return @"1 year";
     } else {
-        return [NSString stringWithFormat:@"%u years", delta / YEAR];        
+        return [NSString stringWithFormat:@"%u y", delta / YEAR];        
     }
 }
 

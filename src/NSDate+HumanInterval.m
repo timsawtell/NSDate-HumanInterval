@@ -36,7 +36,7 @@
     } else if (delta < 3 * HOUR) {
         return @"2 hours";
     } else if (delta < 23 * HOUR) {
-        return [NSString stringWithFormat:@"%u hs", delta / HOUR];
+        return [NSString stringWithFormat:@"%u h", delta / HOUR];
     } else if (delta < 36 * HOUR) {
         return @"1 day";
     } else if (delta < 72 * HOUR) {
@@ -48,7 +48,7 @@
     } else if (delta < 14 * DAY) {
         return @"2 weeks";
     } else if (delta < 9 * WEEK) {
-        return [NSString stringWithFormat:@"%u ws", delta / WEEK];
+        return [NSString stringWithFormat:@"%u w", delta / WEEK];
     } else if (delta < 19 * MONTH) {
         return [NSString stringWithFormat:@"%u mth", delta / MONTH];        
     } else if (delta < 2 * YEAR) {

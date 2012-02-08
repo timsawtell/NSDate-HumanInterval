@@ -1,6 +1,6 @@
 NSDate+HumanInterval
 ====================
-
+ 
 An Objective-C category that adds a single method to `NSDate`:
 `-humanIntervalSinceNow`. This method returns an `NSString` with a
 human-readable (English) representation of the `NSDate`, relative to now. The

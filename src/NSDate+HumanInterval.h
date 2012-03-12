@@ -10,4 +10,5 @@
 
 @interface NSDate (HumanInterval)
 - (NSString *) humanIntervalSinceNow;
+- (NSString *) humanIntervalFromDate:(NSDate *)startDate;
 @end
